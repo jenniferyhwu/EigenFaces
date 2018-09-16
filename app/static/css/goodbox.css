@@ -1,0 +1,15 @@
+.box.has-advanced-upload {
+  outline: 2px dashed #73C6B6;
+  outline-offset: 20px;
+  margin: 15px;
+}
+
+.box.has-advanced-upload .box__dragndrop {
+  display: inline;
+}
+
+.submitField {
+  background-color: #D1F2EB;
+  margin: 25px;
+  padding: 20px;
+}
