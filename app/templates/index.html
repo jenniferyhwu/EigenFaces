@@ -246,6 +246,9 @@
 					</form>
 				</div> -->
 				<!-- end drag and drop -->
+
+				<br>
+
 			<div id="input_file" class="container" style="margin-top: 10px">
         <form action="/index" method="post" enctype=multipart/form-data>
             <input name="image" placeholder="Image upload" type="file"
@@ -253,13 +256,15 @@
             <button type="submit">Upload Images</button>
         </form>
 			</div>
+
+			<br>
+
 			<div id="input_url" class="container" style="margin-top: 10px">
 					<input type="text" id="txtUrl" />
 					<input type="button" id="btnUrl" value="Send image URL" onclick="doUploadUrl();" />
 			</div>
 
       <br>
-
 
       <div id="input_audio" class="container" style="margin-top: 10px">
         <form action="/aud" method="post" enctype=multipart/form-data>

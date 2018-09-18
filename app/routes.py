@@ -35,7 +35,7 @@ path_to_face_api = '/face/v1.0/detect'
 photos = UploadSet('photos', IMAGES)
 
 def process_image(filename):
-    result = "../user_uploaded/" + filename
+    result = "../user-uploaded/" + filename
     with open(result, 'rb') as f:
         img_data = f.read()
         #f.save(result)
@@ -51,7 +51,7 @@ def process_image(filename):
         print('Error:')
         print(e)
 
-app.config['UPLOADED_PHOTOS_DEST'] = 'static'
+app.config['UPLOADED_PHOTOS_DEST'] = '../user-uploaded'
 configure_uploads(app, photos)
 
 speech_to_text = SpeechToTextV1(
